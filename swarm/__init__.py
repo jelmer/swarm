@@ -22,3 +22,33 @@
 """A federated bug tracker."""
 
 __version__ = (0, 0, 1)
+
+
+class BugReport(object):
+    """A bug report."""
+
+
+class BugManifest(object):
+    """Manifest for a bug report.
+
+    """
+
+
+class Swarm(object):
+    """A collection of bug reports.
+
+    :ivar repo: `dulwich.repo.Repo` instance used for storage.
+    """
+
+    def __init__(self, repo):
+        """Open a swarm from a Git repo.
+
+        :param repo: A `dulwich.repo.Repo` instance
+        """
+        self.repo = repo
+
+    @classmethod
+    def from_path(cls, path):
+        from dulwich.repo import Repo
+        r = Repo(path)
+        return cls(r)

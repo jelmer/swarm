@@ -194,6 +194,7 @@ Open Questions
   - Having a separate object kind for user reports just adds more noise and
     complexity - both in the code and in the UI - so let's just use generic bug
     reports for these
+   * But perhaps in a separate namespace, and/or with limited number of fields?
   - Perhaps have a way of creating bug reports that are referenced when
     deduping but not a part of the DAG, so they can be obliterated without
     breaking the DAG.
