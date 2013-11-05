@@ -32,16 +32,21 @@ Requirements
 
 Each bug can have a list of versions that it is present in and versions that it is fixed in.
 
-Possible future enhancements:
+What it is not
+--------------
 
- * email support
-
-What it is not:
  * A version control system
+   ... but it should be able to talk to one
  * A release management system
+   ... but it should be able to talk to one
 
 It may be useful to get information about the revision/release graph
-somewhere, but not stored.
+somewhere, but the bug tracker is not the primary location.
+
+Possible future enhancements
+----------------------------
+
+ * email support
 
 Per-bug metadata
 ~~~~~~~~~~~~~~~~
