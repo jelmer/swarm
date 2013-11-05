@@ -5,7 +5,7 @@ Terminology
 ===========
 
 * bug report: a single report of a bug
-* swarm: a bug report repository
+* swarm: a collection of bug reports
 * version: something that identifies a specific snapshot of the software; can
   be a version string ("1.0"), or a version control version
   ("add050707692f2f255b0a72d2d5175953af2920a")
@@ -26,7 +26,7 @@ Requirements
  * users/developers can subscribe to bugs without needing a local swarm
  * able to close bugs from commit messages / NEWS files
  * slim
- * ability to do partial clones/imports
+ * ability to do partial clones/imports of a swarm
  * ability to track status in a different fork (a bug can be WONTFIX in upstream, but CONFIRMED in the fork)
  * ability to work with upstream/downstream and track their history of a bug
 
@@ -204,3 +204,5 @@ Open Questions
  - would want to be able to push (as opposed to pull) all local changes upstream
    + perhaps with some exceptions?
  - would want to 'rebase'/merge local comments in some cases (e.g. offline use)
+* What about archiving bugs? Perhaps just have a refs/bugs/archived
+  ref that references everything that is archived?

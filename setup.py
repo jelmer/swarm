@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Setup file for dulwich
+# Setup file for swarm.
 # Copyright (C) 2013 Jelmer Vernooij <jelmer@samba.org>
 
 from distutils.core import setup
