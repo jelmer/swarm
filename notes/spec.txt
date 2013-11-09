@@ -198,3 +198,9 @@ Open Questions
     deduping but not a part of the DAG, so they can be obliterated without
     breaking the DAG.
 * Should a bug have a list of branches it affects? Are versions enough?
+* How to e.g. track multiple debian packages in a single swarm,
+  or having a single local swarm to track all my bugs in a lot of
+  different upstreams?
+ - would want to be able to push (as opposed to pull) all local changes upstream
+   + perhaps with some exceptions?
+ - would want to 'rebase'/merge local comments in some cases (e.g. offline use)
